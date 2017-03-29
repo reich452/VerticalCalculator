@@ -14,6 +14,7 @@
 		017273931E8B175500C0977E /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017273921E8B175500C0977E /* Keys.swift */; };
 		017273971E8B1D0900C0977E /* SkiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017273961E8B1D0900C0977E /* SkiController.swift */; };
 		01DE9D2B1E8C4A9E00F1339C /* SnowbirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE9D2A1E8C4A9E00F1339C /* SnowbirdViewController.swift */; };
+		01DE9D2D1E8C6EB400F1339C /* LabelKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE9D2C1E8C6EB400F1339C /* LabelKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		017273921E8B175500C0977E /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		017273961E8B1D0900C0977E /* SkiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkiController.swift; sourceTree = "<group>"; };
 		01DE9D2A1E8C4A9E00F1339C /* SnowbirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowbirdViewController.swift; sourceTree = "<group>"; };
+		01DE9D2C1E8C6EB400F1339C /* LabelKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,6 @@
 				017273951E8B1A0B00C0977E /* ModelController */,
 				017273941E8B1A0300C0977E /* Model */,
 				017273981E8B2B3300C0977E /* HelperFiels */,
-				017273921E8B175500C0977E /* Keys.swift */,
 			);
 			path = VerticalCalculator;
 			sourceTree = "<group>";
@@ -99,6 +100,8 @@
 		017273981E8B2B3300C0977E /* HelperFiels */ = {
 			isa = PBXGroup;
 			children = (
+				017273921E8B175500C0977E /* Keys.swift */,
+				01DE9D2C1E8C6EB400F1339C /* LabelKeys.swift */,
 			);
 			name = HelperFiels;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				017273801E8B169F00C0977E /* AppDelegate.swift in Sources */,
 				01DE9D2B1E8C4A9E00F1339C /* SnowbirdViewController.swift in Sources */,
 				017273931E8B175500C0977E /* Keys.swift in Sources */,
+				01DE9D2D1E8C6EB400F1339C /* LabelKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
