@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		017273801E8B169F00C0977E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0172737F1E8B169F00C0977E /* AppDelegate.swift */; };
 		017273851E8B169F00C0977E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017273831E8B169F00C0977E /* Main.storyboard */; };
-		017273871E8B169F00C0977E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017273861E8B169F00C0977E /* Assets.xcassets */; };
 		0172738A1E8B169F00C0977E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017273881E8B169F00C0977E /* LaunchScreen.storyboard */; };
 		017273931E8B175500C0977E /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017273921E8B175500C0977E /* Keys.swift */; };
 		017273971E8B1D0900C0977E /* SkiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017273961E8B1D0900C0977E /* SkiController.swift */; };
+		01BA2B631E8CB9A600A4D5D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BA2B621E8CB9A600A4D5D0 /* Assets.xcassets */; };
 		01DE9D2B1E8C4A9E00F1339C /* SnowbirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE9D2A1E8C4A9E00F1339C /* SnowbirdViewController.swift */; };
 		01DE9D2D1E8C6EB400F1339C /* LabelKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE9D2C1E8C6EB400F1339C /* LabelKeys.swift */; };
 /* End PBXBuildFile section */
@@ -21,11 +21,11 @@
 		0172737C1E8B169F00C0977E /* VerticalCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerticalCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0172737F1E8B169F00C0977E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		017273841E8B169F00C0977E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		017273861E8B169F00C0977E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		017273891E8B169F00C0977E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0172738B1E8B169F00C0977E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		017273921E8B175500C0977E /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		017273961E8B1D0900C0977E /* SkiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkiController.swift; sourceTree = "<group>"; };
+		01BA2B621E8CB9A600A4D5D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		01DE9D2A1E8C4A9E00F1339C /* SnowbirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowbirdViewController.swift; sourceTree = "<group>"; };
 		01DE9D2C1E8C6EB400F1339C /* LabelKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,9 +74,9 @@
 			children = (
 				0172737F1E8B169F00C0977E /* AppDelegate.swift */,
 				017273831E8B169F00C0977E /* Main.storyboard */,
-				017273861E8B169F00C0977E /* Assets.xcassets */,
 				017273881E8B169F00C0977E /* LaunchScreen.storyboard */,
 				0172738B1E8B169F00C0977E /* Info.plist */,
+				01BA2B621E8CB9A600A4D5D0 /* Assets.xcassets */,
 			);
 			name = Resources;
 			path = VerticalCalculator;
@@ -175,7 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0172738A1E8B169F00C0977E /* LaunchScreen.storyboard in Resources */,
-				017273871E8B169F00C0977E /* Assets.xcassets in Resources */,
+				01BA2B631E8CB9A600A4D5D0 /* Assets.xcassets in Resources */,
 				017273851E8B169F00C0977E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

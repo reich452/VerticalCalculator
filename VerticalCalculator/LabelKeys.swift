@@ -8,6 +8,8 @@
 
 import Foundation
 
-struct Labels {
-    let vertText = "Vert"
+struct LabelKeys {
+    static let topText: Int = 24
+    static let bottomText: Int = 28
+    static let fontFamily: String = "Arial"
 }
