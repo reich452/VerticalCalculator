@@ -13,6 +13,7 @@
 		017273931E8B175500C0977E /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017273921E8B175500C0977E /* Keys.swift */; };
 		017273971E8B1D0900C0977E /* SkiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017273961E8B1D0900C0977E /* SkiController.swift */; };
 		01BA2B631E8CB9A600A4D5D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BA2B621E8CB9A600A4D5D0 /* Assets.xcassets */; };
+		01BA2B651E8D56A700A4D5D0 /* SnowbirdExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BA2B641E8D56A700A4D5D0 /* SnowbirdExtension.swift */; };
 		01DE9D2B1E8C4A9E00F1339C /* SnowbirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE9D2A1E8C4A9E00F1339C /* SnowbirdViewController.swift */; };
 		01DE9D2D1E8C6EB400F1339C /* LabelKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE9D2C1E8C6EB400F1339C /* LabelKeys.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		017273921E8B175500C0977E /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		017273961E8B1D0900C0977E /* SkiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkiController.swift; sourceTree = "<group>"; };
 		01BA2B621E8CB9A600A4D5D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		01BA2B641E8D56A700A4D5D0 /* SnowbirdExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowbirdExtension.swift; sourceTree = "<group>"; };
 		01DE9D2A1E8C4A9E00F1339C /* SnowbirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowbirdViewController.swift; sourceTree = "<group>"; };
 		01DE9D2C1E8C6EB400F1339C /* LabelKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				01DE9D2A1E8C4A9E00F1339C /* SnowbirdViewController.swift */,
+				01BA2B641E8D56A700A4D5D0 /* SnowbirdExtension.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				01DE9D2B1E8C4A9E00F1339C /* SnowbirdViewController.swift in Sources */,
 				017273931E8B175500C0977E /* Keys.swift in Sources */,
 				01DE9D2D1E8C6EB400F1339C /* LabelKeys.swift in Sources */,
+				01BA2B651E8D56A700A4D5D0 /* SnowbirdExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
