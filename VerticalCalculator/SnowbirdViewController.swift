@@ -10,30 +10,34 @@ import UIKit
 
 class SnowbirdViewController: UIViewController {
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpButton()
         setUpButtonConstraints()
         setUpCounterLables()
         setUpLineNumberHolders()
-        setUpLabelConstraintsFalse()
+        setUpLabelConstraints()
+        setUpChailiftImageView()
     }
     
     // MARK: - UI
-    
     let vertLabel = UILabel()
     let vertCounterLabel = UILabel()
     let milesLabel = UILabel()
     let milesCounterLabel = UILabel()
     let runLabel = UILabel()
     let runCounterLabel = UILabel()
-    let snowbirdImage = UIImageView()
+    let logoImageView = UIImageView()
+    let chairLift = UIImageView()
     let plusButton = UIButton()
-    let lineHolder = UIView()
+    let runLineHolder = UIView()
+    let milesLineHolder = UIView()
+    let vertLineHolder = UIView()
+    let vertNumber = UILabel()
+    let runNumber = UILabel()
+    let milesNumber = UILabel()
     
-    // MARK: - Methods
-    
+    // MARK: - Button
     func setUpButton() {
         plusButton.setImage(#imageLiteral(resourceName: "PlussButton"), for: .normal)
         // Add targets
@@ -41,8 +45,6 @@ class SnowbirdViewController: UIViewController {
         // Add buttons as subviews of the ViewController's view
         self.view.addSubview(plusButton)
     }
-    
-    // MARK: - Button
     
     func setUpButtonConstraints() {
         plusButton.translatesAutoresizingMaskIntoConstraints = false
@@ -64,7 +66,7 @@ class SnowbirdViewController: UIViewController {
     
     // MARK: - Labels
     
-    func setUpLabelConstraintsFalse() {
+    func setUpLabelConstraints() {
         
         vertLabel.translatesAutoresizingMaskIntoConstraints = false
         vertCounterLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -86,30 +88,33 @@ class SnowbirdViewController: UIViewController {
             vertCounterLabel.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: self.view.bounds.height * -0.580),
             vertCounterLabel.heightAnchor.constraint(equalToConstant: 29.0),
             vertCounterLabel.widthAnchor.constraint(equalToConstant: 70.0),
+           
             // Miles Text
-            
             milesLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor, constant: 26),
             milesLabel.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: self.view.bounds.height * -0.458),
             milesLabel.heightAnchor.constraint(equalToConstant: 30.0),
             milesLabel.widthAnchor.constraint(equalToConstant: 70.0),
-            // Counter Text
             
+            // Counter Text
             milesCounterLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor, constant: 20),
             milesCounterLabel.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: self.view.bounds.height * -0.430),
             milesCounterLabel.heightAnchor.constraint(equalToConstant: 29.0),
             milesCounterLabel.widthAnchor.constraint(equalToConstant: 70.0),
-            // Run Text
             
+            // Run Text
             runLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor, constant: 26),
             runLabel.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: self.view.bounds.height * -0.308),
             runLabel.heightAnchor.constraint(equalToConstant: 30.0),
             runLabel.widthAnchor.constraint(equalToConstant: 60.0),
-            // Counter text
             
+            // Counter text
             runCounterLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor, constant: 20),
             runCounterLabel.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: view.bounds.height * -0.28),
             runCounterLabel.heightAnchor.constraint(equalToConstant: 29.0),
             runCounterLabel.widthAnchor.constraint(equalToConstant: 70.0)
+            
+            // 
+            
             
             ])
     }
@@ -127,72 +132,67 @@ class SnowbirdViewController: UIViewController {
         runLabel.textColor = UIColor.black
         runLabel.textAlignment = NSTextAlignment.left
         runLabel.text = "Run"
-        runLabel.font = UIFont(name: LabelKeys.fontFamily, size: 14)
+        runLabel.font = UIFont(name: LabelKeys.fontFamily, size: 15)
         self.view.addSubview(runLabel)
         
         // Run Counter text
-        //   runCounterLabel.frame = CGRect(x: 40, y: 375, width: 80, height: 35)
         runCounterLabel.text = "Counter"
-        runCounterLabel.font = UIFont(name: LabelKeys.fontFamily, size: 18)
+        runCounterLabel.font = UIFont(name: "Arial", size: 18)
         self.view.addSubview(runCounterLabel)
         
         // Miles Label text
-        // milesLabel.frame = CGRect(x: 44, y: 275, width: 40, height: 30)
         milesLabel.text = "Miles"
         milesLabel.textAlignment = NSTextAlignment.left
-        milesLabel.font = UIFont(name: LabelKeys.fontFamily, size: 14)
+        milesLabel.font = UIFont(name: LabelKeys.fontFamily, size: 15)
         self.view.addSubview(milesLabel)
         
         // Miles Counter text
-        //  milesCounterLabel.frame = CGRect(x: 40, y: 290 , width: 70, height: 35)
         milesCounterLabel.text = "Counter"
         milesCounterLabel.font = UIFont(name: "Arial", size: 18)
         self.view.addSubview(milesCounterLabel)
         
         // Vert Label Text
-        
         vertLabel.text = "Vert"
-        vertLabel.font = UIFont(name: "Arial", size: 14)
+        vertLabel.font = UIFont(name: "Arial", size: 15)
         self.view.addSubview(vertLabel)
         
         // Vert Counter text
-        //    vertCounterLabel.frame = CGRect(x: 40, y: 195, width: 70, height: 18)
         vertCounterLabel.text = "Counter"
         vertCounterLabel.font = UIFont(name: "Arial", size: 18)
         self.view.addSubview(vertCounterLabel)
         
     }
     
-    func setUpNumberLabels() {
-        
-    }
+    // MARK: - Line Holders 
     
-    
-    
-    
-    
-    
-    func setUpLineNumberHoldersConstraints() {
-        
-    }
-    
-    func snowbirdLogoImageHolder() {
-        let snowbirdLogo = #imageLiteral(resourceName: "snowbirdlogo")
-        
-        // Add targets
-        
-        
-        // self.view.addSubview(snowbirdLogo)
-    }
-    
-    func snowbirdLogoConstraints() {
-        
+    func lineNumberConstraints() {
         NSLayoutConstraint.activate([
-            snowbirdImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            snowbirdImage.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -50.0),
-            snowbirdImage.heightAnchor.constraint(equalToConstant: 57.0),
-            snowbirdImage.widthAnchor.constraint(equalToConstant: 200.0)
+            runLineHolder.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor, constant: -20),
+            runLineHolder.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: view.bounds.height * -0.28),
+            runLineHolder.heightAnchor.constraint(equalToConstant: 1),
+            runLineHolder.widthAnchor.constraint(equalToConstant: 70)
             ])
+    }
+    func setUpLineNumberHolders() {
+        runLineHolder.frame = CGRect(x: 250, y: 475, width: 65, height: 1)
+        runLineHolder.backgroundColor = UIColor.gray
+        self.view.addSubview(runLineHolder)
+        
+        milesLineHolder.frame = CGRect(x: 250, y: 375, width: 65, height: 1)
+        milesLineHolder.backgroundColor = UIColor.gray
+        self.view.addSubview(milesLineHolder)
+        
+        vertLineHolder.frame = CGRect(x: 250, y: 280, width: 65, height: 1)
+        vertLineHolder.backgroundColor = UIColor.gray
+        self.view.addSubview(vertLineHolder)
+    }
+    
+    func numberTrackerConstraints() {
+        
+    }
+    
+    func setUpNumberTracer() {
+    
     }
     
 }
