@@ -16,7 +16,7 @@ struct Keys {
     static let baseMountainKey = 81000
     static let vertical = 2900
     static let feetInMile = 5280
+    static let runsForDay: Int = 0
     
     // MARK: - Constant Labels
-    
 }

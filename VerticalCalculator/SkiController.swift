@@ -13,16 +13,14 @@ class SkiController {
     static let shared = SkiController() 
     
     // MARK: - Properties
+  
     
-    
-    func calculateTotalMilesAndVertSkied(runs: Int, vertical: Int) {
-        
-        let totals = (runs * Keys.vertical) / Keys.feetInMile
-        print(totals)
+    func calculateTotalMiles(run: Int) -> Int {
+        return run * (Keys.vertical) / Keys.feetInMile
     }
     
-    func calculateTotals(run: Int) -> Int {
-        return run * Keys.vertical / Keys.feetInMile
+    func calculateTotalVert(run: Int) -> Int {
+        return run * Keys.vertical
     }
     
 }

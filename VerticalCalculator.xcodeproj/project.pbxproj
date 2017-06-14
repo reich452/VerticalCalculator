@@ -16,6 +16,7 @@
 		01BA2B671E8D9CBC00A4D5D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BA2B661E8D9CBC00A4D5D0 /* Assets.xcassets */; };
 		01DE9D2B1E8C4A9E00F1339C /* SnowbirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE9D2A1E8C4A9E00F1339C /* SnowbirdViewController.swift */; };
 		01DE9D2D1E8C6EB400F1339C /* LabelKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE9D2C1E8C6EB400F1339C /* LabelKeys.swift */; };
+		01EA61B31EF0A596003936B9 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA61B21EF0A596003936B9 /* UIColorHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		01BA2B661E8D9CBC00A4D5D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01DE9D2A1E8C4A9E00F1339C /* SnowbirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowbirdViewController.swift; sourceTree = "<group>"; };
 		01DE9D2C1E8C6EB400F1339C /* LabelKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelKeys.swift; sourceTree = "<group>"; };
+		01EA61B21EF0A596003936B9 /* UIColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				017273921E8B175500C0977E /* Keys.swift */,
 				01DE9D2C1E8C6EB400F1339C /* LabelKeys.swift */,
+				01EA61B21EF0A596003936B9 /* UIColorHelper.swift */,
 			);
 			name = HelperFiels;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				017273801E8B169F00C0977E /* AppDelegate.swift in Sources */,
 				01DE9D2B1E8C4A9E00F1339C /* SnowbirdViewController.swift in Sources */,
 				017273931E8B175500C0977E /* Keys.swift in Sources */,
+				01EA61B31EF0A596003936B9 /* UIColorHelper.swift in Sources */,
 				01DE9D2D1E8C6EB400F1339C /* LabelKeys.swift in Sources */,
 				01BA2B651E8D56A700A4D5D0 /* SnowbirdExtension.swift in Sources */,
 			);
